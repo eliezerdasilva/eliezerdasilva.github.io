@@ -1,0 +1,60 @@
+header {
+    background-image: linear-gradient(45deg, blue , rgb(19, 185, 185) );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    border: 1px solid #000;
+}
+
+.cabecario {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(108, 242, 242);
+}
+section{
+    background-color: aliceblue;
+    margin: -6px;
+}
+@media (max-width: 600px)   
+{
+  .facet_sidebar
+   {
+    display: none;
+   }
+}
+.inicio{
+    display: inline;
+}
+p{
+    display: inline;
+}
+.teto{
+    margin: 0;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 50vh ;
+    margin-bottom: -8px;
+}
+.esquerda{
+    background-color: aliceblue;
+    width: 25%;
+    height: 50vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.direita{
+    background-color: rgb(0, 124, 232);
+    width: 75%;
+    height: 50vh  ;
+    display: block; 
+    justify-content: center;
+    align-items: center;
+}h2{
+     margin-left: 10px;
+}

@@ -5,79 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Página</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="foguete.png" type="image/png">
     <style>
-        footer {
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
             background-color: aqua;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cabecario {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Estilos do conteúdo principal */
+        main {
+            padding: 20px;
+        }
+
+        div {
+            margin-bottom: 20px;
+            background-color: aliceblue;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        pre {
+            white-space: pre-wrap;
+        }
+
+        /* Estilos das imagens */
+        img {
+            margin-right: 10px;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: rgb(0, 124, 232);
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
 
-<body>
+<body >
     <header>
-        <label for="portifolio">Meu portifólio</label>
+        <label class="cabecario">Eliézer da Silva</label>
     </header>
-    <main>
-        <h1>Eliézer da Silva</h1>
-        <img src="imagen.jpg" alt="Eliézer da silva" width="50" height="50">
-        <section>
-            <h2>Sobre min</h2>
-            <pre>
-                I'm Eliézer da Silva, and I'm currently an IT student and I'm falling more and more in love with this world of technology every day.
-
-                I am currently studying Java for the development of desktop systems, Php for web systems and Mysql relational database.
-
-                I dedicate myself more and more to get a good job in the job market, becoming a complete Full Stack.
-
-            </pre>
-        </section>
-        <section>
-            <h2>Formação</h2>
-            <label for="tecnico">Técnico em Informática</label>
-        </section>
-        <section>
-            <h2>Technologies</h2>
 
 
+    <main >
 
-            <img src="mysql.png" alt="html" width="50" height="50">
-            <img src="java.png" alt="html" width="50" height="50">
-            <img src="html-5.png" alt="html" width="50" height="50">
-            <img src="css-3.png" alt="html" width="50" height="50">
-            <img src="android.png" alt="html" width="50" height="50">
-            <img src="git.png" alt="html" width="50" height="50">
-            <img src="postgre.png" alt="html" width="50" height="50">
-            <img src="javascript.png" alt="html" width="50" height="50">
+        <div class="teto">
+         
+            <div class="esquerda">
+                <img src="imagen.jpg" alt="Eliézer da Silva" width="250" height="250" style="display: inline;margin: 10px;">
+            </div>
+            <div class="direita">
+                <h2>Sobre min</h2>
+                <p>
+                    I'm Eliézer da Silva, and I'm currently an IT student and I'm falling more and more in love with this
+                    world of technology every day.
+    
+                    I am currently studying Java for the development of desktop systems, PHP for web systems, and MySQL
+                    relational database.
+    
+                    I dedicate myself more and more to getting a good job in the job market, becoming a complete Full Stack.
+                </p>
+            </div>
+            
+        </div>    
+       
+        <div >
+            <hr>
 
-
-        </section>
-        <section>
-            <h2>Tools</h2>
-
-            <img src="eclipse.png" alt="html" width="50" height="50">
-            <img src="intellij.png" alt="html" width="50" height="50">
-            <img src="androidstudio.png" alt="html" width="50" height="50">
-            <img src="studiocode.png" alt="html" width="50" height="50">
-            <img src="netbeans.webp" alt="html" width="50" height="50">
-            <img src="dbeaver.jpeg" alt="html" width="50" height="50">
-
-
-        </section>
-        <section>
-            <h2>Social media</h2>
+         
+            <h2 >Formação</h2>
             <ul>
-                <li><a href="https://www.linkedin.com/in/eliezer-da-silva/">Linkedin</a></li>
+                <li>
+                Técnico em Informática</li>
+            </ul>
+            <hr>
+            <h2>Tecnologias</h2>
+            <img src="mysql.png" alt="MySQL" width="50" height="50" style="margin-left: 10px;">
+            <img src="java.png" alt="Java" width="50" height="50">
+            <img src="html-5.png" alt="HTML5" width="50" height="50">
+            <img src="css-3.png" alt="CSS3" width="50" height="50">
+            <img src="android.png" alt="Android" width="50" height="50">
+            <img src="git.png" alt="Git" width="50" height="50">
+            <img src="postgre.png" alt="PostgreSQL" width="50" height="50">
+            <img src="javascript.png" alt="JavaScript" width="50" height="50">
+            <hr>
+            <h2>Ferramentas</h2>
+            <img src="eclipse.png" alt="Eclipse" width="50" height="50" style="margin-left: 10px;">
+            <img src="intellij.png" alt="IntelliJ IDEA" width="50" height="50">
+            <img src="androidstudio.png" alt="Android Studio" width="50" height="50">
+            <img src="studiocode.png" alt="Visual Studio Code" width="50" height="50">
+            <img src="netbeans.webp" alt="NetBeans" width="50" height="50">
+            <img src="dbeaver.jpeg" alt="DBeaver" width="50" height="50">
+            <hr>
+            <h2>Competências</h2>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+            <hr>
+            <h2>Redes Sociais</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/eliezer-da-silva/">LinkedIn</a></li>
                 <li><a href="https://www.instagram.com/3liezer_li/">Instagram</a></li>
             </ul>
-
-            <br>
-
-        </section>
-
-
-
+        </div>
     </main>
-
     <footer>
         <label for="rodape">Desenvolvedor</label>
     </footer>
