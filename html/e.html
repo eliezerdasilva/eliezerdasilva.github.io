@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .teto {
+      display: none;
+      background-color: blue;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .facet_sidebar {
+      background-color: yellow;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    /* Regra de mídia para larguras de tela até 600px */
+    @media (max-width: 600px) {
+      .facet_sidebar {
+        display: none;
+      }
+    }
+    
+    /* Regra de mídia para larguras de tela maiores que 600px */
+    @media (min-width: 601px) {
+      .teto {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="teto">Teto</div>
+  <div class="facet_sidebar">Facet Sidebar</div>
+</body>
+</html>
