@@ -19,13 +19,8 @@ section{
     background-color: aliceblue;
     margin: -6px;
 }
-@media (max-width: 600px)   
-{
-  .facet_sidebar
-   {
-    display: none;
-   }
-}
+
+
 .inicio{
     display: inline;
 }
@@ -53,8 +48,9 @@ p{
     width: 75%;
     height: 50vh  ;
     display: block; 
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }h2{
      margin-left: 10px;
 }
