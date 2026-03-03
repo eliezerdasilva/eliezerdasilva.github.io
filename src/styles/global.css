@@ -1,0 +1,201 @@
+:root {
+  ---purple-light: #3e93d8;
+  ---white: #000000;
+  ---dark: #000000;
+  ---black: #00000000;
+  ---gray: #1e1e1e;
+  ---gray-dark: #121212;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: var(---dark);
+  transition: 0.3s ease-in-out;
+  padding: 0.3rem;
+}
+.header.fixed {
+  background-color: #060606e7;
+  transition: 0.2s;
+  padding: 0.2rem;
+}
+.dark-mode {
+  background-color: var(---dark);
+}
+.menu {
+  list-style: none;
+}
+.content {
+  margin: 10rem auto;
+}
+.menu a {
+  color: var(---purple-light);
+  font-size: 1.625rem;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.menu a:hover {
+  opacity: 0.4;
+}
+.circle {
+  border-radius: 50%;
+}
+.about-me {
+  max-width: 600px;
+  color: var(---white);
+  font-size: 1.2rem;
+}
+.about-descri h1 {
+  font-size: 4rem;
+}
+h1 > span {
+  color: var(---purple-light);
+}
+.gap-80px {
+  gap: 80px;
+}
+.experience-container {
+  background-color: var(---gray-dark);
+  width: 100%;
+  max-width: 60rem !important;
+  border-radius: 26px;
+  overflow: auto;
+}
+.exp {
+  width: 100%;
+  max-width: 737px;
+}
+.line {
+  width: 100%;
+  max-width: 694px;
+  border: solid 5px var(---gray);
+}
+.card {
+  background-color: var(---gray);
+  color: var(---white);
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.card.courses {
+  height: 250px;
+}
+.repositore {
+  border: 2px solid var(---gray-dark);
+  padding: 0.7rem;
+  border-radius: 8px;
+}
+.btn {
+  max-width: 200px;
+}
+.logo {
+  width: 100%;
+  max-width: 400px;
+}
+.btn-mobile {
+  display: none;
+}
+.swiper {
+  max-width: 1060px;
+  height: 300px;
+  cursor: pointer;
+}
+.swiper-slide.swiper-slide-active {
+  max-width: 400px !important;
+}
+.swiper-pagination-bullet {
+  background-color: #ffff;
+}
+.courses-container {
+  max-width: 1100px;
+}
+@media (max-width: 1100px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-me {
+    align-items: center;
+  }
+  .about img {
+    width: 300px;
+    max-width: 300px;
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    width: 170px;
+  }
+  .btn-group {
+    justify-content: none !important;
+    flex-direction: column;
+  }
+  .btn-mobile {
+    display: block;
+  }
+  .menu {
+    display: block !important;
+    position: absolute;
+    width: 100%;
+    top: 64px;
+    right: 0;
+    background: var(---gray);
+    height: 0px;
+    z-index: 1000;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .nav-bar.active .menu {
+    height: calc(100vh - 64px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .menu a {
+    display: flex;
+    margin-top: 1rem;
+    margin-block-end: 0.8rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(---purple-light);
+  }
+  .btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  .hamburguer {
+    border-top: 2px solid var(---purple-light);
+    width: 20px;
+  }
+  .hamburguer::after,
+  .hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(---purple-light);
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  .nav-bar.active .hamburguer {
+    border-top-color: transparent;
+  }
+  .nav-bar.active .hamburguer::before {
+    transform: rotate(135deg);
+  }
+  .nav-bar.active .hamburguer:after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .swiper {
+    max-width: 350px;
+    height: 300px;
+    cursor: pointer;
+  }
+}
