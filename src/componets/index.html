@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>ELI</title>
+</head>
+<body class="dark-mode">
+    <header class="header d-flex align-items-center justify-content-between p-4">
+        <img src="/src/images/foguete.png" class="logo" alt="" style="width: 50px; height: auto;">
+        <nav class="nav-bar">
+            <button class="btn-mobile" id="btn-mobile" aria-label="menu hamburguer">
+                <span class="hamburguer" id="hamburguer"></span>
+            </button>
+            <ul class="menu d-flex gap-4">
+                <li><a class="p-2 fw-bold" href="#about">Sobre</a></li>
+                <li><a class="p-2 fw-bold" href="#experience">Experiência</a></li>
+                <li><a class="p-2 fw-bold" href="#projects">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container d-flex flex-column p-2 justify-content-center align-items-center ">
+        <div class="content d-flex gap-80px flex-column p-3">
+            <div class="about d-flex gap-4" id="about">
+                <img src="/src/images/eli.jpg" class="circle" alt="Foto de perfil" width="400px" height="400px">
+                <div class="about-descri">
+                    <h1 class="fw-bold text-white">fwefwe <br> Mhrfy <br> <span>htgdfb</span></h1>
+                    <p class="about-me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sint impedit ipsam quos perspiciatis sed velit suscipit quam, culpa libero voluptate amet, repellendus aperiam pariatur voluptates animi, quo quas atque?</p>
+                    <div class="btn-group d-flex gap-3">
+                        <a class="btn btn-light text-black" href="https://eliezerdasilva.github.io/" target="_blank" rel="external" role="button">GitHub</a>
+                        <a class="btn btn-primary text-black" href="https://br.linkedin.com/in/" target="_blank" rel="external" role="button">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="experiences" id="experience">
+                <h2 class="fw-bold text-white">Experiências</h2>
+                <div class="experience-container d-flex p-4 flex-column gap-4">
+                    <div class="exp d-flex flex-column text-white gap-2">
+                        <h3>222</h3>
+                        <p class="fw-bold">
+                            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia et provident ex saepe animi. Illo fugit minus explicabo, a accusantium omnis ratione, dignissimos rem ullam delectus ab soluta sunt reprehenderit!</span>
+                            <span>  </span>
+                            <span></span>
+                        </p>
+                        <div class="line rounded"></div>
+                        <p><strong>e</strong> d</p>
+                        <div class="line rounded"></div>
+                        <p class="fw-bold"></p>
+                        <div class="exp d-flex flex-column text-white gap-2">
+                            <h3></h4>
+                                <p class="fw-bold">
+                                    <span>2</span>
+                                    <span>2 </span>
+                                    <span>2</span>
+                                </p>
+                            <div class="line rounded">2</div>    
+                            <p class="fw-bold">d</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects" id="projects">
+                <h2 class="fw-bold text-white">Projetos</h2>
+                <div class="projects-container d-flex align-items-start swiper">
+                    <div class="swiper-wrapper" id="container-project"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
